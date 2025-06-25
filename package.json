@@ -1,0 +1,19 @@
+{
+  "name": "api_webinars",
+  "version": "0.0.1",
+  "description": "Mi primera API REST",
+  "main": "index.js",
+  "author": "Asier Rodríguez Lamas",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
