@@ -1,20 +1,20 @@
-// Import the dependences
+// Importamos las dependencias
 require('dotenv').config();
 const mongoose = require("mongoose");
 const app = require("./app");
-// Server port
+// Puerto del servidor
 const port = 3000;
-// Url database
+// URL de la base de datos
 const urlMongoAtlas = process.env.MONGODB_URI;
 
 async function main() {
   try {
-    // Connect to Mongo Atlas database
+    // Conectamos a la base de datos
     await mongoose.connect(urlMongoAtlas);
 
     console.log("Conexión establecida con Mongo Atlas");
 
-    // Server set to listen to requests
+    // Servidor listo para oir peticiones
     app.listen(port, () => {
       console.log(`Servidor del API REST está funcionando en http://localhost:${port}`);
     });
